@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/customer' ,'PagesController@customer') -> name('customer');
+// Route::get('/customer' ,'PagesController@customer') -> name('customer');
+Route::get('/customer' ,'PagesController@listCustomer') -> name('customer');
 Route::get('/action', 'PagesController@action') -> name ('action');
 Route::get('/about' , 'PagesController@about') -> name('about');
 Route::get('/join' , 'PagesController@join')-> name('join');
